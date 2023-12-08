@@ -1,0 +1,161 @@
+:root {
+  --primary-color: #5a12aa;
+}
+
+body {
+  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.gap_2 {
+  gap: 24px;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-width {
+  width: 100%;
+}
+
+/* sss */
+.body-wrap {
+  background-color: rgb(240, 240, 240);
+  background-image: url(https://spark.co.nz/content/dam/spark/images/backgrounds/generic/ula/background_spark.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.body {
+  width: 100%;
+  max-width: 376px;
+  margin-inline: auto;
+}
+
+.svg-wrap {
+  margin-block: 2rem;
+}
+
+.svg {
+  height: 73px;
+  width: 180px;
+}
+
+.header {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+}
+
+.header_2 {
+  letter-spacing: 1px;
+}
+
+.center {
+  text-align: center;
+}
+
+.c-primary {
+  color: var(--primary-color);
+}
+
+.form {
+  padding: 40px 32px 32px;
+  border-width: 1px;
+  border-radius: 1rem;
+  border-color: rgb(218, 218, 218);
+  color: rgb(29, 29, 29);
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  position: relative;
+}
+
+input {
+  padding: 1rem;
+  background-color: inherit;
+  border: 2px solid rgb(186, 186, 186);
+  border-radius: 0.3rem;
+}
+
+input:focus {
+  outline: var(--primary-color);
+}
+
+label {
+  gap: 2px;
+  font-weight: 600;
+}
+
+button {
+  padding: 1rem;
+  background-color: inherit;
+  justify-content: center;
+  border: 2px solid rgb(218, 218, 218);
+  border-radius: 0.5rem;
+}
+
+button[type=submit] {
+  background-color: #772bcb;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.terms {
+  font-size: 13px;
+}
+
+.bg1 {
+  background-color: var(--primary-color);
+  height: 3vw;
+}
+
+.bg2 {
+  background-color: var(--primary-color);
+  height: 3vw;
+}
+
+@media screen and (width <= 600px) {
+  .svg {
+    height: 55px;
+    width: 148px;
+  }
+
+  .form {
+    border: none;
+    padding-top: 0;
+    padding-inline: 15px 15px;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .body-wrap {
+    background-image: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+}
